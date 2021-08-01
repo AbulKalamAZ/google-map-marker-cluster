@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open-Sans', sans-serif;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  min-height: 100vh;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}

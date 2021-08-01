@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map Cluster</title>
+
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    
+    
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUakvDlphVVdTcsWVhFD5JDqOvn57uL0c&callback=initMap&libraries=&v=weekly" 
+    defer
+  >
+  </script>
+  <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
