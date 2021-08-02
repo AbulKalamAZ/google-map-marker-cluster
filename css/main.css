@@ -1,16 +1,76 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Open-Sans', sans-serif;
 }
 
 /* Set the size of the div element that contains the map */
+.map-form-container {
+  min-height: 140px;
+  max-height: 140px;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-input-form {
+  position: relative;
+  min-width: 400px;
+}
+
+.map-input-field {
+  width: 100%;
+  height: 48px;
+  padding: 16px;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: none;
+  background: #f4f4f4;
+  font-size: 16px;
+  transition: box-shadow 250ms ease-in-out;
+}
+
+.map-input-field:focus {
+  outline: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.15);
+}
+
+.map-find-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  border: 0;
+  border-radius: 30px;
+  background-color: #ec5e04;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  cursor: pointer;
+}
+
 #map {
-  min-height: 100vh;
+  min-height: calc(100vh - 140px);
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */
+}
+
+.content {
+  margin: 12px;
+}
+.firstHeading {
+  margin-bottom: 16px;
+}
+.phone,
+.email,
+.address {
+  margin-bottom: 12px;
 }
